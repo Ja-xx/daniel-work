@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <header>
+            I certify that the information I have provided above are true to the best of my
+             knowledge without any malice or any intention to commit acts of misrepresentation.
+             <hr>
+             I am aware that any false, misleading, or deceptive information provided may lead to withdrawal,
+              expulsion, or any disciplinary action which may be dealt with by the school's authorities.
+        </header>
+
+        <form action="https://formsubmit.co/danieloluwadamola@gmail.com" method="POST" />
+
+            <div class="form first">
+                <!--=========== start Personal Details =============-->
+               <div class="details personal">
+                   <span class="title"> Applicant</span>
+
+                   <div class="fields">
+                       <div class="input-field">
+                           <label>Name of Applicant</label>
+                           <input type="text" name="Name of Applicant" placeholder="Enter your full name" required>
+                       </div>
+
+                       <div class="input-field">
+                           <label>Date Signed by Applicant</label>
+                           <input type="date" name="Date Signed by Applicant" placeholder="Enter Date Signed by Applicant" required>
+                       </div>
+
+                       <div class="input-field">
+                           <label>Email</label>
+                           <input type="text" name="email" placeholder="Enter your email" required>
+                       </div>
+
+                       <div class="input-field">
+                           <label>Drop your qualification, o'level result, birth certificate and other needed document</label>
+                           <input type="file" name="file" id="demo" onchange="readFile();" required>
+                       </div>
+
+                       <!-- <div class="input-field">
+                           <label>Gender</label>
+                           <select required>
+                               <option disabled selected>Select gender</option>
+                               <option>Male</option>
+                               <option>Female</option>
+                               <option>Others</option>
+                           </select>
+                       </div>
+
+                       <div class="input-field">
+                           <label>Occupation</label>
+                           <input type="text" placeholder="Enter your ccupation" required>
+                       </div>
+                   </div>
+               </div> -->
+               <!--================ End Personal Details ====================-->
+
+               <!--============== Start Identity Details ====================-->
+               <!-- <div class="details ID">
+                   <span class="title">Identity Details</span>
+
+                   <div class="fields">
+                       <div class="input-field">
+                           <label>ID Type</label>
+                           <input type="text" placeholder="Enter ID type" required>
+                       </div>
+
+                       <div class="input-field">
+                           <label>ID Number</label>
+                           <input type="number" placeholder="Enter ID number" required>
+                       </div>
+
+                       <div class="input-field">
+                           <label>Issued Authority</label>
+                           <input type="text" placeholder="Enter issued authority" required>
+                       </div>
+
+                       <div class="input-field">
+                           <label>Issued State</label>
+                           <input type="text" placeholder="Enter issued state" required>
+                       </div>
+
+                       <div class="input-field">
+                           <label>Issued Date</label>
+                           <input type="date" placeholder="Enter your issued date" required>
+                       </div>
+
+                       <div class="input-field">
+                           <label>Expiry Date</label>
+                           <input type="date" placeholder="Enter expiry date" required>
+                       </div>
+                   </div> -->
+
+                   <!-- <button class="nextBtn">
+                       <span class="btnText">Next</span>
+                       <i class="uil uil-navigator"></i>
+                   </button> -->
+                   <!-- <div class="buttons"> -->
+                    <input type="hidden" name="_captcha" value="false">
+                    <div class="backBtn">
+                        <a href="app.html">Back</a>
+                    </div>
+                    
+                    <button class="sumbit">
+                        <span class="btnText">Submit</span>
+                        <i class="uil uil-navigator"></i>
+                    </button>
+                    <!-- </div> -->
+               </div> 
+           </div>
+           <!--============== End Identity Details ====================-->
+
+
+        </form>
+    </div>
+
+
+
+
+
+
+    <script type="text/javascript">
+        function readFile(){
+            var reader = new FileReader();
+            var file = document.getElementById('demo').file[0];
+
+            reader.onload = function(e){
+                document.getElementById('result').src = e.target.result;
+            }
+
+            reader.readAsDataURL(file);
+        }
+
+    </script>
+
+</body>
+</html>
